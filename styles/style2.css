@@ -1,9 +1,14 @@
 body {
-    background-color: gray;
+    background-color: black;
+     background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),  url("../Pictures/clouds.jpg");
+ margin-left: auto;
+ margin-right:auto;
 }
+
 .center-text {
     text-align: center;
 }
+
 
 .flex-container {
     display: flex;
@@ -57,6 +62,18 @@ body {
     color: lightgray;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-size: 1.2em;
+}
+
+.text-info {
+    color: ghostwhite;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 1em;
+}
+
+.video {
+    width: 560px;
+    height: 315px;
+    border: 0;
 }
 
 /* LINKS */
