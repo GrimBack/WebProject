@@ -1,0 +1,14 @@
+
+2021-05-12: Arbetade med webbsida nr 2.
+
+2021-05-13: arbetade med css.
+
+2021-05-18: Arbetade med css.
+
+2021-05-19: Arbetade med webbsida nr 2.
+
+2021-05-20: Arbetade med webbsida nr 2 och nr 3.
+
+2021-05-21: Gjorde klart den tredje webbsidan.
+
+2021-05-23: Arbetade med responsiv design för bild och text.
