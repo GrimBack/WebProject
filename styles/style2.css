@@ -1,17 +1,17 @@
 body {
     background-color: black;
-     background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),  url("../Pictures/clouds.jpg");
- margin-left: auto;
- margin-right:auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../Pictures/clouds.jpg");
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media all and (max-width: 720px) {
     body {
-background-image:url();
-background-color: black;
- margin-left: auto;
- margin-right:auto;
-}
+        background-image: url();
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .center-text {
@@ -28,7 +28,7 @@ background-color: black;
 .flex-container1 {
     display: flex;
     flex-direction: row;
-    align-self:center;
+    align-self: center;
     background-color: black;
 }
 
@@ -41,9 +41,9 @@ background-color: black;
 
 .grid-container {
     display: grid;
-    grid-template-columns: 20% auto 20%; 
+    grid-template-columns: 20% auto 20%;
     grid-template-rows: 10% 80%;
-    
+
 }
 
 .grid-topmenu {
@@ -51,7 +51,7 @@ background-color: black;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 1;
-    
+
 }
 
 .grid-main {
@@ -68,67 +68,67 @@ background-color: black;
 }
 
 @media all and (max-width: 720px) {
-.text {
-    color: white;
-    text-shadow: 0px 0px 0 #000, 0px 0px 0 #000, 0x 0px 0 #000, 0px 0px 0 #000;
-    font-size: 0.65em;
-}
+    .text {
+        color: white;
+        text-shadow: 0px 0px 0 #000, 0px 0px 0 #000, 0px 0px 0 #000, 0px 0px 0 #000;
+        font-size: 0.8rem;
+    }
 }
 
 .section-text {
     color: lightgray;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 @media all and (max-width: 720px) {
-.section-text {
-    color: white;
-    text-shadow: 0px 0px 0 #000, 0px 0px 0 #000, 0px 0px 0 #000, 0px 0px 0 #000;
-    font-size: 0.6em;
-}
+    .section-text {
+        color: white;
+        text-shadow: 0px 0px 0 #000, 0px 0px 0 #000, 0px 0px 0 #000, 0px 0px 0 #000;
+        font-size: 1.2rem;
+    }
 }
 
 .text-info {
     color: ghostwhite;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 @media all and (max-width: 720px) {
-.text-info {
-    color: white;
-    text-shadow: 0px 0px 0 #000, 0x 0px 0 #000, 0px 0px 0 #000, 0px 0px 0 #000;
-    font-size: 0.5em;
-}
+    .text-info {
+        color: white;
+        text-shadow: 0px 0px 0 #000, 0px 0px 0 #000, 0px 0px 0 #000, 0px 0px 0 #000;
+        font-size: 1rem;
+    }
 }
 
 .link-text {
     color: lightgray;
-     text-align: center;
-     font-size: 1.3em;   
+    text-align: center;
+    font-size: 1.3rem;
 }
 
 @media all and (max-width: 720px) {
-.link-text {
-    color: white;
-     text-align: center;
-     font-size: 0.65em;   
-}
+    .link-text {
+        color: white;
+        text-align: center;
+        font-size: 1.25rem;
+    }
 }
 
 .video {
     width: 560px;
     height: 315px;
-    border: 0;
+
 }
 
 @media all and (max-width: 720px) {
-.video {
-    width: 200px;
-    height: 112px;
-    border: 0;
-}
+    .video {
+        width: 300px;
+        height: 168px;
+        border: 0;
+    }
 }
 
 .gap {
@@ -140,7 +140,8 @@ background-color: black;
 
 a {
     outline: none;
-    
+    text-decoration: none;
+
 }
 
 a:visited,
@@ -150,9 +151,10 @@ a:link {
 
 a:focus,
 a:hover {
-    text-decoration: none;
+    opacity: 0.5;
 }
 
 a:active {
     color: whitesmoke;
     text-shadow: 0px 0px 1px #000000;
+}

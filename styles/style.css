@@ -1,25 +1,25 @@
 body {
- background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),  url("../Pictures/clouds.jpg");
- margin-left: auto;
- margin-right:auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../Pictures/clouds.jpg");
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media all and (max-width: 720px) {
     body {
-background-image:url();
-background-color: black;
- margin-left: auto;
- margin-right:auto;
-}
+        background-image: url();
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
 .flex-side {
     display: flex;
     justify-content: center;
-    text-align: center;    
+    text-align: center;
     flex-direction: row;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     color: white;
 }
 
@@ -36,12 +36,14 @@ background-color: black;
     display: flex;
     flex-direction: column;
     align-self: center;
+    margin: 10px;
+    padding: 20px;
 }
 
 .flex-container1 {
     display: flex;
     flex-direction: row;
-    align-self:center;
+    align-self: center;
     background-color: black;
     opacity: 0.7;
 }
@@ -55,54 +57,63 @@ background-color: black;
 
 .grid-container {
     display: grid;
-    grid-template-columns: 20% auto 20%; 
+    grid-template-columns: 20% auto 20%;
     grid-template-rows: 10% 80%;
-    
-}
+    grid-template-areas:
+        "header header header"
+        ". main sidemenu"
 
-.grid-topmenu {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    
-}
-
-.grid-sidemenu {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    background-color: black;
-    opacity: 0.7;
-    
-}
-
-.grid-main {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-img {
-  height: 400px;
-  width: auto;
-  display: block;
-    margin-left: auto;
-    margin-right: auto;
-  
 }
 
 @media all and (max-width: 720px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 20% auto 20%;
+        grid-template-rows: 10% 10% 80%;
+        grid-template-areas:
+            "header header header"
+            ". sidemenu ."
+            ". main ."
+
+    }
+}
+
+.grid-topmenu {
+    grid-area: header;
+}
+
+.grid-sidemenu {
+    grid-area: sidemenu;
+    background-color: black;
+    opacity: 0.7;
+
+}
+
+
+.grid-main {
+    grid-area: main;
+}
+
+
+
 img {
-  height: 125px;
-  width: auto;
-  display: block;
+    height: 400px;
+    width: auto;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-  
+
 }
+
+@media all and (max-width: 720px) {
+    img {
+        height: 150px;
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
 }
 
 .text {
@@ -113,42 +124,54 @@ img {
 }
 
 @media all and (max-width: 720px) {
-.text {
-    color: white;
-    font-size: 0.6rem;
-    text-shadow: -0px -0px 0 #000, 0px -0px 0 #000, -0px 0px 0 #000, 0px 0px 0 #000;
-    text-align: center;
-}
+    .text {
+        color: white;
+        font-size: 0.8rem;
+        text-shadow: -0px -0px 0 #000, 0px -0px 0 #000, -0px 0px 0 #000, 0px 0px 0 #000;
+        text-align: center;
+    }
 }
 
 .text-header {
     color: lightgray;
     font-size: 1.4rem;
-    text-shadow: 0px 0px 0 #000, 0px 0px 0 #000, 0px 0px 0 #000, 0px 0x 0 #000;
     text-align: center;
 }
 
 @media all and (max-width: 720px) {
-.text-header {
-    color: white;
-    font-size: 0.7rem;
-    text-shadow: 0px 0px 0 #000, 0px 0px 0 #000, 0px 0px 0 #000, 0px 0px 0 #000;
-    text-align: center;
-}
+    .text-header {
+        color: white;
+        font-size: 0.8rem;
+        text-align: center;
+    }
 }
 
 .link-text {
     color: lightgray;
-     text-align: center;
-     font-size: 1.3rem;   
+    text-align: center;
+    font-size: 1.3rem;
 }
 
 @media all and (max-width: 720px) {
-.link-text {
-     color: white;
-     text-align: center;
-     font-size: 0.65rem;   
+    .link-text {
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+    }
 }
+
+.links-text {
+    color: lightgray;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+@media all and (max-width: 720px) {
+    .links-text {
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+    }
 }
 
 .gap {
@@ -160,7 +183,7 @@ img {
 
 a {
     outline: none;
-    
+    text-decoration: none;
 }
 
 a:visited,
@@ -170,11 +193,11 @@ a:link {
 
 a:focus,
 a:hover {
-    text-decoration: none;
+    opacity: 0.5;
 }
 
 a:active {
-    color: white;;
+    color: white;
+    ;
     text-shadow: 0px 0px 1px #000000;
 }
-    
