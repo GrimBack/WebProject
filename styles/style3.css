@@ -17,7 +17,6 @@ body {
     text-align: center;
 }
 
-
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -42,7 +41,6 @@ body {
     display: grid;
     grid-template-columns: 20% auto 20%;
     grid-template-rows: 10% 80%;
-
 }
 
 .grid-topmenu {
@@ -50,7 +48,6 @@ body {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 1;
-
 }
 
 .grid-main {
@@ -102,10 +99,6 @@ body {
     }
 }
 
-.gap {
-    padding-top: 10px;
-}
-
 img {
     height: 200px;
     width: 200px;
@@ -116,13 +109,8 @@ img {
     img {
         height: 150px;
         width: 150px;
-
     }
 }
-
-
-/* LINKS */
-
 
 a {
     outline: none;
