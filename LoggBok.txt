@@ -23,3 +23,5 @@
 2021-05-23: Arbetade med responsiv design för bild och text.
 
 2021-05-25: Adderade grid area och kontrollerade html och css kod.
+
+2021-05-26: Löst problem inom css och html.
