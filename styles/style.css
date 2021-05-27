@@ -23,14 +23,14 @@ body {
 }
 
 @media all and (max-width: 720px) {
-.flex-side {
-    height: 15rem;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    flex-direction: column;
-    color: white;
-}
+    .flex-side {
+        height: 15rem;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        flex-direction: column;
+        color: white;
+    }
 }
 
 .flex-item {
@@ -173,9 +173,9 @@ body {
 }
 
 @media all and (max-width: 720px) {
-.gap {
-    padding-top: 50px;
-}
+    .gap {
+        padding-top: 50px;
+    }
 }
 
 .sidemenu-gap {
@@ -183,9 +183,9 @@ body {
 }
 
 @media all and (max-width: 720px) {
-.sidemenu-gap {
-    padding-top: 80px;
-}
+    .sidemenu-gap {
+        padding-top: 80px;
+    }
 }
 
 .gap-right {
