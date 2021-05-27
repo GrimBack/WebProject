@@ -95,7 +95,7 @@ body {
     grid-area: main;
 }
 
-img {
+.IMG1 {
     height: auto;
     width: 100%;
     display: block;
@@ -105,13 +105,26 @@ img {
 }
 
 @media all and (max-width: 720px) {
-    img {
+    .IMG1 {
         height: 150px;
         width: auto;
         display: block;
         margin-left: auto;
         margin-right: auto;
 
+    }
+}
+
+.IMG3 {
+    height: 200px;
+    width: 200px;
+
+}
+
+@media all and (max-width: 720px) {
+    .IMG3 {
+        height: 150px;
+        width: 150px;
     }
 }
 
@@ -163,6 +176,37 @@ img {
 .gap {
     padding-top: 50px;
 }
+}
+
+.sidemenu-gap {
+    padding-top: 100px;
+}
+
+@media all and (max-width: 720px) {
+.sidemenu-gap {
+    padding-top: 80px;
+}
+}
+
+.gap-right {
+    padding-right: 20px;
+}
+
+.video {
+    width: 560px;
+    height: 315px;
+}
+
+@media all and (max-width: 720px) {
+    .video {
+        width: 300px;
+        height: 168px;
+        border: 0;
+    }
+}
+
+.center-text {
+    text-align: center;
 }
 
 a {
